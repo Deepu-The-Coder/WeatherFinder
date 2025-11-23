@@ -1,0 +1,108 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #FEB47B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("bgweatherfinal.png");
+  background-size: cover;         /* image covers entire screen */
+  background-position: center;    /* centers the image */
+  background-repeat: no-repeat;   /* prevents tiling */
+}
+
+.weather-container{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #0A1B2A; ;
+    
+    box-shadow: 0 0px 25px black;
+    padding: 2rem;  
+    border-radius: 18px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.weather-container:hover{
+    box-shadow: 0 0 75px black;
+}
+
+h1 {
+    
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.input-container{
+     display: flex;
+     gap: 0.5rem;
+     margin-bottom: 1.5rem;
+    
+
+}
+
+#search-btn{
+    padding: 0.75rem 1rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+#search-btn:hover{
+    background-color: #0056b3;
+}
+#city-input{
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#city-input:focus{
+    border: 0;
+    outline: 0;
+}
+#weather-results{
+    margin-top: 1.5rem;
+    
+}
+
+#weather-results h2{
+    color: black;
+    margin-bottom: 0px;
+}
+
+#weather-results p{
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+.error-message {
+    color: #ff0800;
+    font-weight: bold;
+    
+}
+
+#weather-results div{  
+    height: 90px;
+    font-size: 4.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+#weather-results div:nth-of-type(2){
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#weather-results div:nth-of-type(2) img{
+    height: 19px;
+    width: 17.61px;
+}
